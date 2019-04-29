@@ -40,22 +40,6 @@ public class PersonContact extends BaseContact {
     }
 
 
-    public int compareTo(BaseContact p) {
-        int compareResult = this.lName.compareTo(p.lName);
-
-        // if names match then return true
-
-        if (compareResult == 0) {
-            return this.fName.compareTo(p.fName);
-        } else {
-            return compareResult;
-        }
-
-        // if this = p return 0
-
-        // if this > p return 1
-    }
-
     public String toString() {
         System.out.println();
         String stringReturn = "----------Person Contact--------------\n"

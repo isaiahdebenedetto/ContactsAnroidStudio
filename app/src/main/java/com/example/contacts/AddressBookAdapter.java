@@ -9,6 +9,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import static com.example.contacts.ShowContacts.app;
+
 public class AddressBookAdapter extends BaseAdapter {
 
     Activity mActivity;
@@ -20,10 +22,10 @@ public class AddressBookAdapter extends BaseAdapter {
     }
 
     @Override
-    public int getCount() { return theList.getTheList().size(); }
+    public int getCount() { return app.getList().getTheList().size(); }
 
     @Override
-    public Object getItem(int position) { return theList.getTheList().get(position); }
+    public Object getItem(int position) { return app.getList().getTheList().get(position); }
 
     @Override
     public long getItemId(int position) { return 0; }
@@ -41,7 +43,7 @@ public class AddressBookAdapter extends BaseAdapter {
 
         BaseContact p = (BaseContact) this.getItem(position);
 
-        tv_fname.setText(p.getfName());
+        tv_fname.setText(p.getfName()+ " " +p.getlName());
         tv_phoneNumberValue.setText(p.getPhoneNumber());
 
         int icon_resource_numbers [] = {

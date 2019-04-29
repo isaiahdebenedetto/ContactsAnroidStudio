@@ -39,22 +39,6 @@ public class BusinessContact extends BaseContact {
         this.url = url;
     }
 
-    public int compareTo(BaseContact b) {
-        int compareResult = this.lName.compareTo(b.lName);
-
-        // if names match then return true
-
-        if (compareResult == 0) {
-            return this.fName.compareTo(b.fName);
-        } else {
-            return compareResult;
-        }
-
-        // if this = b return 0
-
-        // if this > b return 1
-    }
-
     public String toString() {
         System.out.println();
         String stringReturn = "----------Business Contact--------------\n"

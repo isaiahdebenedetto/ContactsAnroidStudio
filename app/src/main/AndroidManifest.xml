@@ -14,6 +14,8 @@
         <activity android:name=".ShowBusiness" />
         <activity android:name=".ContactOptionView" />
         <activity android:name=".NewBusinessContact" />
+        <activity android:name=".NewPersonContact" />
+        <activity android:name=".ShowPerson" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
